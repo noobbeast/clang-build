@@ -15,7 +15,7 @@ if [ -z "$1" ] || [ -z "$GIT_TOKEN" ] || [ -z "$TELEGRAM_TOKEN" ] || [ -z "$TELE
 fi
 # Clone Tc build
 git clone https://github.com/ClangBuiltlinux/tc-build
-mv github/release tc-build
+mv github-release tc-build
 cd tc-build || exit
 
 # Install dependency
