@@ -13,6 +13,10 @@ err() {
 if [ -z "$1" ] || [ -z "$GIT_TOKEN" ] || [ -z "$TELEGRAM_TOKEN" ] || [ -z "$TELEGRAM_CHAT" ]; then
    echo "* Incomplete environment!"
 fi
+# Clone Tc build
+git clone https://github.com/ClangBuiltlinux/tc-build
+mv github/release tc-build
+cd tc-build || exit
 
 # Install dependency
 bash ci.sh deps
