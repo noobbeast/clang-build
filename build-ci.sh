@@ -165,7 +165,7 @@ UploadAgain()
     GetRelease="$(./github-release upload \
         --security-token "$GIT_TOKEN" \
         --user noobbeast \
-        --repo dexter-lang \
+        --repo dexter-clang \
         --tag "${Tags}" \
         --name "$ZipName" \
         --file "$ZipName")"
