@@ -55,7 +55,7 @@ extra_args=()
 msg "Building LLVM..."
 send_msg "<b>Clang build started on <code>[ $BRANCH ]</code> branch</b>"
 ./build-llvm.py \
-	--clang-vendor "DexterNoob" \
+	--clang-vendor "DexterNoob🐒" \
 	--defines "LLVM_PARALLEL_COMPILE_JOBS=$(nproc) LLVM_PARALLEL_LINK_JOBS=$(nproc) CMAKE_C_FLAGS=-O3 CMAKE_CXX_FLAGS=-O3" \
 	--projects "clang;compiler-rt;lld;polly" \
 	--targets "ARM;AArch64;X86" \
