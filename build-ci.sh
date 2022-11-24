@@ -55,7 +55,7 @@ extra_args=()
 msg "Building LLVM..."
 send_msg "<b>Clang build started on <code>[ $BRANCH ]</code> branch</b>"
 ./build-llvm.py \
-	--clang-vendor "DexterNoob🐒" \
+	--clang-vendor "Dexter🐒" \
 	--defines "LLVM_PARALLEL_COMPILE_JOBS=$(nproc) LLVM_PARALLEL_LINK_JOBS=$(nproc) CMAKE_C_FLAGS=-O3 CMAKE_CXX_FLAGS=-O3" \
 	--projects "clang;compiler-rt;lld;polly" \
 	--targets "ARM;AArch64;X86" \
@@ -109,7 +109,7 @@ binutils_ver="$(ls | grep "^binutils-" | sed "s/binutils-//g")"
 clang_version="$(install/bin/clang --version | head -n1 | cut -d' ' -f4)"
 TagsDate="$(TZ=Asia/Jakarta date +"%Y%m%d")"
 BuildDate="$(TZ=Asia/Jakarta date +"%Y-%m-%d")"
-ZipName="DexterNoob-Clang-$clang_version-${TagsDate}.tar.gz"
+ZipName="Dexter-Clang-$clang_version-${TagsDate}.tar.gz"
 Tags="DexterNoob-Clang-$clang_version-${TagsDate}-release"
 ClangLink="https://github.com/noobbeast/dexter-clang/releases/download/${Tags}/${ZipName}"
 
